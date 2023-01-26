@@ -53,7 +53,7 @@ def write_file(student_mark,student_marks_file):
 if __name__ == '__main__':
     student_marks_file = open("IP_Marks.txt","r").read().splitlines()
     #marks of assignment and percentage of grade included in the final result
-    wts = [(10, 5), (20, 5), (100, 15), (40, 10), (100, 35), (100, 30)]   
+    wts = [(10, 5), (20, 5), (100, 15), (40, 10), (100, 35), (100, 30)]
     marks = student_marks(student_marks_file)
     percentile = calculate_marks(marks)
     write_file(percentile,marks)
