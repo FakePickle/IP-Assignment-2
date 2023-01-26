@@ -3,7 +3,7 @@ def text_extracter():
     urls = []
     importance_url = []
     url_text = []
-    with open("/home/fakepickle/Downloads/Python programs/College/IP Assignment 2/pages.txt",'r') as urls_file:
+    with open("pages.txt",'r') as urls_file:
         for line in urls_file:
             url_and_importance,url = line.split(': ')
             main_url,init_importance = url_and_importance.split(', ')
